@@ -7,7 +7,11 @@ def is_even_len(string: str) -> bool:
 
 
 def remove_third_char(string: str) -> str:
-    pass
+    string_list = list(string)
+    # Remove 3rd character, but start counting at 0
+    string_list.pop(3 - 1)
+
+    return "".join(string_list)
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
